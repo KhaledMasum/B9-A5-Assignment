@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/c3ee225c4c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 
@@ -58,7 +59,8 @@
                     app. The
                     integrated testing features allow for a
                     streamlined .</p>
-                <button class="btn btn-accent bg-[#1DD100] border-none font-bold">Buy Tickets</button>
+                <button class="btn btn-accent bg-[#1DD100] border-none font-bold"><a href="#ticket">Buy
+                        Tickets</a></button>
             </div>
         </section>
 
@@ -73,7 +75,7 @@
                         <p class="font-light">use by January 2024</p>
                     </div>
                     <div class="col-span-5 font-inter flex justify-center items-center flex-col">
-                        <h1 class="text-black text-2xl font-bold">NEWS15</h1>
+                        <h1 class="text-black text-2xl font-bold">NEW15</h1>
                         <p class="font-medium">Coupon Code</p>
                     </div>
                 </div>
@@ -97,7 +99,7 @@
         </section>
 
         <!-- Ticket Section -->
-        <section class="bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-3xl">
+        <section id="ticket" class="bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-3xl">
             <h1 class="font-raleway text-4xl font-bold mt-12 text-center">P.H Paribahan</h1>
             <p class="font-light font-inter text-center py-4 w-1/2 mx-auto">Yes, you can run unit tests and view the
                 results
@@ -106,7 +108,7 @@
                 The integrated testing features allow for a
                 streamlined .</p>
 
-            <div class="grid grid-cols-12 p-8 bg-[#FFFFFF] rounded-xl mx-16W">
+            <div class="grid grid-cols-12 p-8 bg-[#FFFFFF] rounded-xl mx-16">
                 <div class="col-span-9 font-inter border-r-2 border-dashed border-[#1DD100] p-4">
                     <div class="flex justify-between">
                         <div class="flex gap-2">
@@ -116,10 +118,10 @@
                                 <p class="font-light font-inter">Coach-009-WEB ! AC_Business</p>
                             </div>
                         </div>
-                        <div class="flex gap-2">
+                        <div class="flex gap-2 bg-[#0307120D] p-4 rounded-lg">
                             <img src="images/seat-green.png" class="w-6 h-6" alt="">
-                            <div>
-                                <span>40</span> Seats Left
+                            <div class="text-[#1DD100]">
+                                <span id="current-seat">40</span> Seats Left
                             </div>
                         </div>
                     </div>
@@ -175,16 +177,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">A</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="a1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>A1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="a2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>A2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="a3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>A3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="a4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>A4</small></p>
                         </div>
                     </div>
@@ -193,16 +195,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">B</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="b1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>B1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="b2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>B2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="b3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>B3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="b4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>B4</small></p>
                         </div>
                     </div>
@@ -211,16 +213,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">C</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="c1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>C1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="c2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>C2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="c3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>C3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="c4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>C4</small></p>
                         </div>
                     </div>
@@ -229,16 +231,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">D</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="d1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>D1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="d2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>D2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="d3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>D3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="d4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>D4</small></p>
                         </div>
                     </div>
@@ -247,16 +249,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">E</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="e1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>E1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="e2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>E2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="e3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>E3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="e4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>E4</small></p>
                         </div>
                     </div>
@@ -265,16 +267,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">F</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="f1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>F1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="f2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>F2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="f3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>F3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="f4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>F4</small></p>
                         </div>
                     </div>
@@ -283,16 +285,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">G</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="g1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>G1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="g2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>G2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="g3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>G3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="g4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>G4</small></p>
                         </div>
                     </div>
@@ -301,16 +303,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">H</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="h1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>H1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="h2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>H2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="h3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>H3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="h4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>H4</small></p>
                         </div>
                     </div>
@@ -319,16 +321,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">I</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="i1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>I1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="i2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>I2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="i3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>I3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="i4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>I4</small></p>
                         </div>
                     </div>
@@ -337,16 +339,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">J</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="j1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>J1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="j2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>J2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="j3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>J3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg">
+                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="j4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>J4</small></p>
                         </div>
                     </div>
@@ -359,16 +361,12 @@
 
                     <div class="p-6 bg-[#F7F8F8] my-4 rounded-xl">
                         <div>
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th class="font-semibold font-inter text-black">Seat <span
-                                                class="bg-[#1DD100] text-white px-1">2</span></th>
-                                        <th class="font-semibold font-inter text-black">Class</th>
-                                        <th class="font-semibold font-inter text-black">Price</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
+                            <!-- <ul class="flex justify-between">
+                                <li class="font-semibold font-inter text-black">Seat <span
+                                        class="bg-[#1DD100] text-white px-1" id="selected-seat">0</span></li>
+                                <li class="font-semibold font-inter text-black">Class</li>
+                                <li class="font-semibold font-inter text-black">Price</li>
+                                <tbody id="table-content">
                                     <tr>
                                         <td class="font-semibold text-slate-500">C2</td>
                                         <td class="font-semibold text-slate-500">Economy</td>
@@ -383,7 +381,50 @@
                                 <tfoot>
                                     <tr>
                                         <td colspan="2" class="font-semibold font-inter text-black">Total Price</td>
-                                        <td class="font-semibold font-inter text-black">550</td>
+                                        <td class="font-semibold font-inter text-black">BDT 0</td>
+                                    </tr>
+                                </tfoot>
+                            </ul> -->
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="font-semibold font-inter text-black">Seat <span
+                                                class="bg-[#1DD100] text-white px-1" id="selected-seat">0</span></th>
+                                        <th class="font-semibold font-inter text-black">Class</th>
+                                        <th class="font-semibold font-inter text-black">Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="table-content">
+                                    <tr>
+                                        <td class="font-semibold text-slate-500">C2</td>
+                                        <td class="font-semibold text-slate-500">Economy</td>
+                                        <td class="font-semibold text-slate-500">550</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="font-semibold text-slate-500">C2</td>
+                                        <td class="font-semibold text-slate-500">Economy</td>
+                                        <td class="font-semibold text-slate-500">550</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="2" class="font-semibold font-inter text-black">Total Price</td>
+                                        <td class="font-semibold font-inter text-black">BDT 0</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <div class="flex justify-between items-center px-4">
+                                <input type="text" placeholder="Have any copupon?"
+                                    class="input input-sm input-bordered w-full max-w-xs rounded-r-none" />
+                                <button
+                                    class="btn btn-sm btn-primary bg-[#1DD100] hover:bg-[#1DD100] border-0 py-0 rounded-l-none"
+                                    disabled>Apply</button>
+                            </div>
+                            <table class="table">
+                                <tfoot>
+                                    <tr>
+                                        <td colspan="2" class="font-semibold font-inter text-black">Grand Total</td>
+                                        <td class="font-semibold font-inter text-black">BDT 0</td>
                                     </tr>
                                 </tfoot>
                             </table>
@@ -392,14 +433,14 @@
 
                     <label class="form-control w-full">
                         <div class="label">
-                            <span class="label-text text-inter font-semibold">Passenger name?</span>
+                            <span class="label-text text-inter font-semibold">Passenger name*</span>
                         </div>
-                        <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full" />
+                        <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full" required />
                     </label>
 
                     <label class="form-control w-full">
                         <div class="label">
-                            <span class="label-text text-inter font-semibold">Phone Number</span>
+                            <span class="label-text text-inter font-semibold">Phone Number*</span>
                         </div>
                         <input type="number" placeholder="Enter Your Phone Number" class="input input-bordered w-full"
                             required />
@@ -466,6 +507,25 @@
                 </svg></a>
         </nav>
     </footer>
+
+    <script src="utilities.js"></script>
+    <script>
+        // function selectSeat(idsArray) {
+        //         idsArray.forEach(id => {
+        //             let element = document.getElementById(id);
+        //             if (element) {
+        //                 element.style.backgroundColor = 'blue';
+        //             } else {
+        //                 console.log(`Element with ID '${id}' not found.`);
+        //             }
+        //         });
+        //     }
+
+
+        //     let seatNumbers = ['a1', 'a2', 'a3', 'a4', 'b1', 'b2', 'b3', 'b4', 'c1', 'c2', 'c3', 'c4', 'd1', 'd2', 'd3', 'd4', 'e1', 'e2', 'e3', 'e4', 'f1', 'f2', 'f3', 'f4', 'g1', 'g2', 'g3', 'g4', 'h1', 'h2', 'h3', 'h4', 'i1', 'i2', 'i3', 'i4', 'j1', 'j2', 'j3', 'j4'];
+
+        //     selectSeat(seatNumbers);
+    </script>
 </body>
 
 </html>

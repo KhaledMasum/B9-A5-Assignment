@@ -11,7 +11,7 @@
     <title>Document</title>
 </head>
 
-<body class="mx-24">
+<body class="sm:mx-24">
     <header>
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -31,7 +31,7 @@
                         <li><a>Search</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl">P-Ticket</a>
+                <a class="btn btn-ghost text-xl">Greenline Paribahan</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -50,15 +50,16 @@
 
     <main>
         <!-- Banner Section -->
-        <section class="banner bg-no-repeat bg-cover bg-center py-24 rounded-3xl"
+        <section class="banner bg-no-repeat bg-cover bg-center py-24 sm:rounded-3xl"
             style="background-image: url(images/banner.png);">
-            <div class="flex flex-col items-center gap-4">
-                <h1 class="text-4xl text-white font-raleway font-extrabold">End-to-End Travel with</h1>
-                <h1 class="text-4xl font-raleway font-extrabold text-[#1DD100]">P Paribahan</h1>
-                <p class="font-inter text-white">Yes, you can run unit tests and view the results directly within the
-                    app. The
-                    integrated testing features allow for a
-                    streamlined .</p>
+            <div class="flex flex-col items-center gap-4 p-4">
+                <h1 class="text-4xl text-white font-raleway font-extrabold text-center">End-to-End Travel with</h1>
+                <h1 class="text-4xl font-raleway font-extrabold text-[#1DD100]">Greenline Paribahan</h1>
+                <p class="font-inter text-white sm:w-1/2 text-center">Green Line Paribahan is apparently a family owned
+                    transport
+                    company
+                    specializing in transportation of passenger bus
+                    services since 1990.</p>
                 <button class="btn btn-accent bg-[#1DD100] border-none font-bold"><a href="#ticket">Buy
                         Tickets</a></button>
             </div>
@@ -67,7 +68,7 @@
         <!-- Offer Section -->
         <section>
             <h1 class="font-raleway text-4xl font-bold mt-12 text-center">Best offers for you</h1>
-            <div class="grid grid-cols-2 gap-6 my-8">
+            <div class="grid sm:grid-cols-2 gap-6 my-8">
                 <div class="grid grid-cols-12 p-8 bg-[#FFBF0F] rounded-xl">
                     <div class="col-span-7 font-inter border-r-2 border-dashed border-white">
                         <h1 class="text-black text-4xl font-bold">15% OFF</h1>
@@ -100,18 +101,15 @@
 
         <!-- Ticket Section -->
         <section id="ticket" class="bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-3xl">
-            <h1 class="font-raleway text-4xl font-bold mt-12 text-center">P.H Paribahan</h1>
-            <p class="font-light font-inter text-center py-4 w-1/2 mx-auto">Yes, you can run unit tests and view the
-                results
-                directly
-                within the app.
-                The integrated testing features allow for a
-                streamlined .</p>
+            <h1 class="font-raleway text-4xl font-bold mt-12 text-center">Greenline Paribahan</h1>
+            <p class="font-light font-inter text-center py-4 w-1/2 mx-auto">From a humble beginning of local services,
+                our transport system encompasses all reachable areas of Bangladesh and also
+                beyond the border, extending our reach to Kolkata in India.</p>
 
-            <div class="grid grid-cols-12 p-8 bg-[#FFFFFF] rounded-xl mx-16">
-                <div class="col-span-9 font-inter border-r-2 border-dashed border-[#1DD100] p-4">
-                    <div class="flex justify-between">
-                        <div class="flex gap-2">
+            <div class="grid grid-cols-12 p-8 bg-[#FFFFFF] rounded-xl sm:mx-16">
+                <div class="col-span-12 sm:col-span-9 font-inter sm:border-r-2 border-dashed border-[#1DD100] p-4">
+                    <div class="sm:flex justify-between">
+                        <div class="flex gap-2 mb-4 sm:mb-0">
                             <img src="images/bus-logo.png" alt="">
                             <div>
                                 <h1 class="font-raleway text-2xl font-bold">Greenline Paribahan</h1>
@@ -148,7 +146,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-span-3 font-inter flex justify-center items-center flex-col">
+                <div class="col-span-12 sm:col-span-3 font-inter flex justify-center items-center flex-col">
                     <img src="images/fare.png" alt="">
                     <h1 class="text-black text-2xl font-bold"><span>550</span> Taka</h1>
                     <p class="font-medium">Per Seat</p>
@@ -156,8 +154,8 @@
             </div>
 
 
-            <div class="grid grid-cols-12 p-8 bg-[#FFFFFF] rounded-xl mx-16">
-                <div class="col-span-7 border-r-2 border-dashed border-[#0307124D] p-4">
+            <div class="grid grid-cols-12 p-8 bg-[#FFFFFF] rounded-xl sm:mx-16">
+                <div class="col-span-12 sm:col-span-7 sm:border-r-2 border-dashed border-[#0307124D] p-4">
                     <div class="border-b border-dashed border-[#03071233]">
                         <h1 class="font-raleway text-2xl font-semibold py-2">Select Your Seat</h1>
                     </div>
@@ -177,16 +175,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">A</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="a1" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="a1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>A1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="a2" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="a2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>A2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="a3" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="a3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>A3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="a4" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="a4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>A4</small></p>
                         </div>
                     </div>
@@ -195,16 +193,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">B</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="b1" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="b1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>B1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="b2" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="b2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>B2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="b3" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="b3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>B3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="b4" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="b4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>B4</small></p>
                         </div>
                     </div>
@@ -213,16 +211,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">C</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="c1" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="c1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>C1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="c2" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="c2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>C2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="c3" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="c3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>C3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="c4" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="c4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>C4</small></p>
                         </div>
                     </div>
@@ -231,16 +229,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">D</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="d1" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="d1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>D1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="d2" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="d2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>D2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="d3" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="d3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>D3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="d4" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="d4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>D4</small></p>
                         </div>
                     </div>
@@ -249,16 +247,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">E</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="e1" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="e1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>E1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="e2" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="e2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>E2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="e3" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="e3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>E3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="e4" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="e4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>E4</small></p>
                         </div>
                     </div>
@@ -267,16 +265,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">F</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="f1" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="f1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>F1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="f2" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="f2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>F2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="f3" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="f3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>F3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="f4" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="f4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>F4</small></p>
                         </div>
                     </div>
@@ -285,16 +283,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">G</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="g1" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="g1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>G1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="g2" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="g2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>G2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="g3" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="g3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>G3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="g4" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="g4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>G4</small></p>
                         </div>
                     </div>
@@ -303,16 +301,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">H</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="h1" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="h1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>H1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="h2" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="h2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>H2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="h3" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="h3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>H3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="h4" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="h4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>H4</small></p>
                         </div>
                     </div>
@@ -321,16 +319,16 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">I</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="i1" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="i1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>I1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="i2" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="i2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>I2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="i3" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="i3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>I3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="i4" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="i4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>I4</small></p>
                         </div>
                     </div>
@@ -339,52 +337,28 @@
                         <div class="py-2">
                             <p class="font-inter font-medium">J</p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="j1" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="j1" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>J1</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="j2" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="j2" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>J2</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="j3" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="j3" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>J3</small></p>
                         </div>
-                        <div class="bg-[#0307120D] px-8 py-2 rounded-lg" id="j4" onclick="selectSeat(event)">
+                        <div class="bg-[#0307120D] px-4 sm:px-8 py-2 rounded-lg" id="j4" onclick="selectSeat(event)">
                             <p class="font-inter font-medium"><small>J4</small></p>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-span-5 p-4">
+                <div class="col-span-12 sm:col-span-5 p-4">
                     <div class="border-b border-dashed border-[#03071233]">
                         <h1 class="font-raleway text-2xl font-semibold py-2">Select Your Seat</h1>
                     </div>
 
                     <div class="p-6 bg-[#F7F8F8] my-4 rounded-xl">
                         <div>
-                            <!-- <ul class="flex justify-between">
-                                <li class="font-semibold font-inter text-black">Seat <span
-                                        class="bg-[#1DD100] text-white px-1" id="selected-seat">0</span></li>
-                                <li class="font-semibold font-inter text-black">Class</li>
-                                <li class="font-semibold font-inter text-black">Price</li>
-                                <tbody id="table-content">
-                                    <tr>
-                                        <td class="font-semibold text-slate-500">C2</td>
-                                        <td class="font-semibold text-slate-500">Economy</td>
-                                        <td class="font-semibold text-slate-500">550</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="font-semibold text-slate-500">C2</td>
-                                        <td class="font-semibold text-slate-500">Economy</td>
-                                        <td class="font-semibold text-slate-500">550</td>
-                                    </tr>
-                                </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <td colspan="2" class="font-semibold font-inter text-black">Total Price</td>
-                                        <td class="font-semibold font-inter text-black">BDT 0</td>
-                                    </tr>
-                                </tfoot>
-                            </ul> -->
                             <table class="table">
                                 <thead>
                                     <tr>
@@ -465,13 +439,12 @@
 
     <footer class="footer p-10 bg-[#030712] text-base-content">
         <aside>
-            <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                clip-rule="evenodd" class="fill-current">
-                <path
-                    d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
-                </path>
-            </svg>
-            <p>P-Ticket<br>P-Ticket is a digital platform to make your daily commuting better.</p>
+            <h6 class="footer-title">Address</h6>
+            <p>GreenLine Paribahan 9/2,</p>
+            <p>Outer Circular Road, Momen Bagh,
+                Rajarbagh, Dhaka-1217</p>
+            <p>Phone: 8315380</p>
+            <p>Email: greenline2009@gmail.com</p>
         </aside>
         <nav>
             <h6 class="footer-title">Legal</h6>
@@ -508,23 +481,6 @@
     </footer>
 
     <script src="utilities.js"></script>
-    <script>
-        // function selectSeat(idsArray) {
-        //         idsArray.forEach(id => {
-        //             let element = document.getElementById(id);
-        //             if (element) {
-        //                 element.style.backgroundColor = 'blue';
-        //             } else {
-        //                 console.log(`Element with ID '${id}' not found.`);
-        //             }
-        //         });
-        //     }
-
-
-        //     let seatNumbers = ['a1', 'a2', 'a3', 'a4', 'b1', 'b2', 'b3', 'b4', 'c1', 'c2', 'c3', 'c4', 'd1', 'd2', 'd3', 'd4', 'e1', 'e2', 'e3', 'e4', 'f1', 'f2', 'f3', 'f4', 'g1', 'g2', 'g3', 'g4', 'h1', 'h2', 'h3', 'h4', 'i1', 'i2', 'i3', 'i4', 'j1', 'j2', 'j3', 'j4'];
-
-        //     selectSeat(seatNumbers);
-    </script>
 </body>
 
 </html>

@@ -395,21 +395,13 @@
                                     </tr>
                                 </thead>
                                 <tbody id="table-content">
-                                    <tr>
-                                        <td class="font-semibold text-slate-500">C2</td>
-                                        <td class="font-semibold text-slate-500">Economy</td>
-                                        <td class="font-semibold text-slate-500">550</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="font-semibold text-slate-500">C2</td>
-                                        <td class="font-semibold text-slate-500">Economy</td>
-                                        <td class="font-semibold text-slate-500">550</td>
-                                    </tr>
+
                                 </tbody>
                                 <tfoot>
                                     <tr>
                                         <td colspan="2" class="font-semibold font-inter text-black">Total Price</td>
-                                        <td class="font-semibold font-inter text-black">BDT 0</td>
+                                        <td class="font-semibold font-inter text-black">BDT <span
+                                                id="current-total">0</span></td>
                                     </tr>
                                 </tfoot>
                             </table>
@@ -424,36 +416,43 @@
                                 <tfoot>
                                     <tr>
                                         <td colspan="2" class="font-semibold font-inter text-black">Grand Total</td>
-                                        <td class="font-semibold font-inter text-black">BDT 0</td>
+                                        <td class="font-semibold font-inter text-black">BDT <span
+                                                id="grand-total">0</span></td>
                                     </tr>
                                 </tfoot>
                             </table>
                         </div>
                     </div>
 
-                    <label class="form-control w-full">
-                        <div class="label">
-                            <span class="label-text text-inter font-semibold">Passenger name*</span>
-                        </div>
-                        <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full" required />
-                    </label>
+                    <form action="">
+                        <label class="form-control w-full">
+                            <div class="label">
+                                <span class="label-text text-inter font-semibold">Passenger name*</span>
+                            </div>
+                            <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full"
+                                required />
+                        </label>
 
-                    <label class="form-control w-full">
-                        <div class="label">
-                            <span class="label-text text-inter font-semibold">Phone Number*</span>
-                        </div>
-                        <input type="number" placeholder="Enter Your Phone Number" class="input input-bordered w-full"
-                            required />
-                    </label>
+                        <label class="form-control w-full">
+                            <div class="label">
+                                <span class="label-text text-inter font-semibold">Phone Number*</span>
+                            </div>
+                            <input type="number" placeholder="Enter Your Phone Number"
+                                class="input input-bordered w-full" required id="mobile-number"
+                                onkeyup="enableNextButton()" />
+                        </label>
 
-                    <label class="form-control w-full">
-                        <div class="label">
-                            <span class="label-text text-inter font-semibold">Email ID</span>
-                        </div>
-                        <input type="email" placeholder="Enter Your Email ID" class="input input-bordered w-full" />
-                    </label>
+                        <label class="form-control w-full">
+                            <div class="label">
+                                <span class="label-text text-inter font-semibold">Email ID</span>
+                            </div>
+                            <input type="email" placeholder="Enter Your Email ID" class="input input-bordered w-full" />
+                        </label>
 
-                    <button class="btn btn-primary w-full mt-4 bg-[#1DD100] hover:bg-[#1DD100] border-0">Next</button>
+                        <button type="submit"
+                            class="btn btn-primary w-full mt-4 bg-[#1DD100] hover:bg-[#1DD100] border-0" id="next-btn"
+                            disabled>Next</button>
+                    </form>
 
                     <div class="flex justify-between">
                         <a href=""><small class="underline text-slate-500">Terms & Conditions</small></a>

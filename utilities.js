@@ -46,7 +46,7 @@ function selectSeat(event) {
     const currentSeat = parseInt(currentSeatId);
 
     if (currentSeat <= 3 && !seatElement.classList.contains('bg-green-400')) {
-        seatElement.classList.add('bg-green-400');
+        seatElement.classList.add('bg-green-400', 'text-white');
         defaultSeat('default-seat');
         increaseCurrentSeat('selected-seat');
         appendNewRow('table-content');
@@ -54,6 +54,8 @@ function selectSeat(event) {
         calculateTotalPrice();
         enableNextButton();
         activeCoupon('selected-seat');
+    } else if (currentSeat >= 3) {
+        alert("You can't select more that 4 tickets at a time");
     }
 }
 
